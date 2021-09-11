@@ -1,0 +1,7 @@
+{
+    "editor.fontSize": 17,
+    "debug.console.fontSize": 17,
+    "terminal.integrated.fontSize": 17,
+    "csharpextensions.useThisForCtorAssignments": false,
+    "csharpextensions.privateMemberPrefix": "_"
+}
