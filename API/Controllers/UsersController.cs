@@ -31,6 +31,20 @@ namespace API.Controllers
         [Authorize]
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
+            string str = "abcabcd";
+             System.Console.WriteLine("output:");
+            for (int i = 0; i < str.Length; i++)
+            {
+                for (int k = 0; k <= i; k++)
+                {
+                    if(str.Substring(0,k)== str.Substring(i-k+1,k)){
+                        System.Console.Write(k+",");
+                    }
+                }
+                
+            }
+             System.Console.WriteLine("finish:");
+
             return await _context.Users.FindAsync(id);
         }
     }
